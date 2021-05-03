@@ -12,34 +12,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
+    <div class="wrapper">
     <header>
         <h1>BMI to bodyfat percentage calculator</h1>
     </header>
+</div>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="calculator">
-            <label for="BMI">BMI:</label>
-            <input type="number" id="BMI" />
-            <br>
-            <label for="age">Age:</label>
-            <input type="number" id="age">
-            <br>
-            <label>Gender:</label>
-            <label for="male">Male</label>
-            <input type="checkbox" id="male">
-            <label for="female">female</label>
-            <input type="checkbox" id="female">
-            <br>
-            <input type="button" value="Calculate bodyfat percentage" onclick="bodyFatCalc()">
-
-
+      <!--  <picture>
+            <source srcset="images/fittness-girl-1080.jpg" media="(min-width: 1200px)">
+            <source srcset="images/fittness-girl-middle.jpg" media="(min-width: 700px)">
+            <img src="images/fittness-girl-small.jpg" alt="My amazing peace pie at the appropriate dimension!">
+      </picture> -->
+        <div class="wrapper">
+        <div id="calculator" class="calculator">
+            <div class="calculator-content">
+                <label for="BMI">BMI:</label>
+                <input type="number" id="BMI" />
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" id="age">
+                <br>
+                <label>Gender:</label>
+                <label for="male">Male</label>
+                <input type="checkbox" id="male">
+                <label for="female">female</label>
+                <input type="checkbox" id="female">
+                <br>
+                <input class="button1" type="button" value="Calculate bodyfat percentage" onclick="bodyFatCalc()">
+            </div>
+            
         </div>
+    </div>
+    <div class="wrapper">
         <div id="result">
             
 
         </div>
+    </div>
     
         <script src="script.js" async defer></script>
     </body>
